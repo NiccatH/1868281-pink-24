@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Никита Хламов](https://up.htmlacademy.ru/adaptive/24/user/1868281).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
