@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
+
     <header class="page-header">
       <nav class="main-nav">
         <a class="main-nav__logo">
@@ -35,25 +36,28 @@
           </ul>
         </div>
       </nav>
+    </header>
+
+    <main class="page-main">
 
       <section class="download-app">
         <div class="download-app__wrapper">
           <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
           <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
-          <a class="button" href="#">Cкачать приложение</a>
+          <a class="download-app__button button" href="#">Cкачать приложение</a>
           <ul class="download-app__list">
             <li class="download-app__item">
-              <a class="apple-icon" href="#">
+              <a class="download-app__link" href="#">
                 <span class="visually-hidden">Эпл</span>
               </a>
             </li>
             <li class="download-app__item">
-              <a class="android-icon" href="#">
+              <a class="download-app__link" href="#">
                 <span class="visually-hidden">Андроид</span>
               </a>
             </li>
             <li class="download-app__item">
-              <a class="microsoft-icon" href="#">
+              <a class="download-app__link" href="#">
                 <span class="visually-hidden">Майкрософт</span>
               </a>
             </li>
@@ -61,9 +65,6 @@
           <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-    </header>
-
-    <main class="page-main">
 
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -84,8 +85,8 @@
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
-            <li class="advantages_item advantages__science">
-              <h3 class="advantages__title">Эффект 24 часа!</h3>
+            <li class="advantages__item advantages__item--science">
+              <h3 class="advantages__title advantages__title--science">Эффект 24 часа!</h3>
               <p class="advantages__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <a class="advantages__link" href="#">Узнать больше об исследовании</a>
             </li>
@@ -162,11 +163,9 @@
         </p>
         </div>
       </section>
-    </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
+      <section class="contacts">
+        <div class="contacts__wrapper">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -183,37 +182,36 @@
             </li>
           </ul>
         </div>
+      </section>
 
-        <div class="page-footer__map map">
-          <div class="map__script"></div>
-        </div>
+      <div class="map">
+        <div class="map__script"></div>
+      </div>
+    </main>
 
-        <div class="page-footer__social social">
-
-          <a class="page-footer__logo"></a>
-
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
-                <span class="visually-hidden">Ютюб</span>
-              </a>
-            </li>
-          </ul>
-
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo"></a>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--twitter" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--facebook" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--youtube" href="#">
+              <span class="visually-hidden">Ютюб</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
