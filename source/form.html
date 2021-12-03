@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -49,15 +50,15 @@
           <h2 class="initials__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
           <ul class="initials__list">
             <li class="initials__item">
-              <label for="surname">Фамилия</label>
+              <label class="initials__label" for="surname">ФАМИЛИЯ</label>
               <input class="initials__field" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
             </li>
             <li class="initials-form__item">
-              <label for="first-name">Имя</label>
+              <label class="initials__label" for="first-name">ИМЯ</label>
               <input class="initials__field" type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя *">
             </li>
             <li class="initials-form__item">
-              <label for="patronymic">Отчество</label>
+              <label class="initials__label" for="patronymic">ОТЧЕСТВО</label>
               <input class="initials__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             </li>
           </ul>
@@ -67,7 +68,7 @@
           <legend class="achievments__title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="achievments__list">
             <li class="achievments__item">
-              <label>
+              <label class="achievments__name">
                 <input class="achievments__field" type="checkbox" name="took a selfie with a shark">
                 Сделал селфи с акулой
               </label>
@@ -124,20 +125,20 @@
         <fieldset class="os-used">
           <legend class="os-used__title">С каким приложением путешествовали?</legend>
           <ul class="os-uded__list">
-            <li class="os-ised__item">
-              <label>
+            <li class="os-used__item">
+              <label class="os-used__label">
                 <input class="os-used__field" type="radio" name="OS" value="ios">
                 Pink для iOS
               </label>
             </li>
-            <li class="os-ised__item">
-              <label>
+            <li class="os-used__item">
+              <label class="os-used__label">
                 <input class="os-used__field" type="radio" name="OS" value="android">
                 Pink на Android
               </label>
             </li>
-            <li class="os-ised__item">
-              <label>
+            <li class="os-used__item">
+              <label class="os-used__label">
                 <input class="os-used__field" type="radio" name="OS" value="windows">
                 Windows Phone
               </label>
@@ -147,11 +148,11 @@
 
         <fieldset class="comments">
           <legend class="comments__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-          <textarea name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="comments__area" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
 
-        <button class="page-form__button button" type="submit">Отправить форму</button>
-        <p class="page-form__required-text">* — обязательные поля</p>
+        <button class="page-form__button button" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+        <p class="page-form__required-text"><strong class="page-form__required-symbol">*</strong> — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
 
       </form>
     </main>
