@@ -1,12 +1,31 @@
-.download-app {
-  background-color: @black-light;
-}
+
 
 .download-app__slogan {
+  width: 280px;
   color: @white;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  margin: 0 auto;
+}
+
+.download-app__back-mini-wrapper {
+  background-color: @black-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.download-app__mini-wrapper {
+  width: 280px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .download-app__list {

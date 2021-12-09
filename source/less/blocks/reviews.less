@@ -1,3 +1,15 @@
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__author-info {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
 .reviews__author-name {
   color: @black;
   font-style: normal;
@@ -8,4 +20,21 @@
 
 .reviews__text {
   line-height: 30px;
+}
+
+.reviews__author-details {
+  line-height: 30px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.reviews__button {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 }

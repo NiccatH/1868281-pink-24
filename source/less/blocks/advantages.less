@@ -8,6 +8,94 @@
 
 .advantages__header-title {
   line-height: 29px;
+  margin: 0;
+}
+
+.advantages__list {
+  .list-style-none;
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 310px;
+    grid-row: 1 / 2;
+    margin: 0 auto;
+  }
+}
+
+.advantages__item--science {
+  display: none;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @grey;
+    grid-column: 1 / -1;
+  }
+}
+
+.advantages__iphone-image {
+  background-color: @red;
+  width: 157px;
+  height: 320px;
+  margin: 0 auto;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 547px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 186px;
+    height: 382px;
+  }
+}
+
+.advantages__iphone-image--smile {
+  order: 3;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 5%;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+  }
 }
 
 .advantages__title {
@@ -19,10 +107,6 @@
 .advantages__title--science {
   font-size: 30px;
   line-height: 36px;
-}
-
-.advantages__list {
-  .list-style-none;
 }
 
 .advantages__link {

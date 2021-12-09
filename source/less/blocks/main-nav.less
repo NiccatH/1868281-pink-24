@@ -1,5 +1,12 @@
 .main-nav {
-  background-color: @black-transparrent;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-nav__link {
@@ -12,8 +19,42 @@
 
 .main-nav__list {
   .list-style-none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-nav__wrapper {
   background-color: @black-lighter;
+
+  @media (min-width: @desktop-width) {
+    width: 620px;
+    background-color: transparent;
+  }
+}
+
+.main-nav__top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+  background-color: @black-transparrent;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 110px;
+    background-color: transparent;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

@@ -2,17 +2,49 @@
   background-color: @grey;
 }
 
+.price__wrapper {
+  max-width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 721px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1300px;
+  }
+}
+
 .price__list {
+  width: 766px;
   border-spacing: 0;
   border-collapse: collapse;
+  transform: translateX(-29%);
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    transform: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .price__tariff {
+  width: 33%;
   color: @white;
   background-color: @black-lighter;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 25%;
+  }
 }
 
 .price__tariff-value {
@@ -21,11 +53,30 @@
 }
 
 .price__tariff--hollow {
+  display: none;
   background-color: transparent;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+  }
+}
+
+.price__box--mobile {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+  }
 }
 
 .price__box {
   line-height: 30px;
   border: 2px solid @grey-dark;
+}
+
+.price__toggles {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
