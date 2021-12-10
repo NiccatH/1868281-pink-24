@@ -3,34 +3,37 @@
 }
 
 .price__wrapper {
-  max-width: 320px;
   overflow: hidden;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    max-width: 721px;
+    padding: 0 4%;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1300px;
+    padding: 0 11%;
   }
 }
 
 .price__list {
-  width: 766px;
+  min-width: 766px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   border-spacing: 0;
   border-collapse: collapse;
-  transform: translateX(-29%);
 
   @media (min-width: @tablet-width) {
-    width: 630px;
+    min-width: unset;
+    width: 100%;
+    position: static;
     transform: none;
-    margin: 0 auto;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
