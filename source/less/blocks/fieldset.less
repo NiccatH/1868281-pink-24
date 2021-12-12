@@ -1,0 +1,10 @@
+.fieldset {
+  border: none;
+  margin: 0;
+}
+
+.fieldset:not(:first-child) {
+  @media (min-width: @tablet-width) {
+    border: 2px solid @grey-dark;
+  }
+}

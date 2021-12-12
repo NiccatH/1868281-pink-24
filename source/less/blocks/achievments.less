@@ -1,8 +1,21 @@
 .achievments {
   background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .achievments__list {
   .list-style-none;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }
 

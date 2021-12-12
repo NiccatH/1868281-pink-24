@@ -1,3 +1,78 @@
+.photo-form {
+  background-color: @grey;
+  max-width: 660px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 3%;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    padding: 0;
+  }
+}
+
+.photo-form__tools-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 42px;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.photo-form__range-slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-form__range-slider {
+  display: inline-block;
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+}
+
+.photo-form__button-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.photo-form__filter-button {
+  position: absolute;
+  top: 0;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+  }
+}
+
+.photo-form__filter-button--crop {
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.photo-form__filter-button--fill {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photo-form__filter-button--contrast {
+  left: 60%;
+  transform: translateX(-50%);
+}
+
 .photo-form__button {
   border-radius: 30px;
 }

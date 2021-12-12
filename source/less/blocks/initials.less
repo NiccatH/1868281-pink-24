@@ -1,3 +1,26 @@
+.initials {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
 .initials__list {
   .list-style-none;
+}
+
+.initials__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.initials__field {
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+  }
 }
