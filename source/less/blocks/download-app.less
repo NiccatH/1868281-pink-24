@@ -1,12 +1,45 @@
+.download-app {
+  margin-top: -380px;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+  }
+}
+
+.download-app__wrapper {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 200px;
+    margin-left: 3%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
+}
 
 .download-app__slogan {
-  width: 280px;
   color: @white;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  margin: 0 auto;
+  margin-bottom: 296px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .download-app__back-mini-wrapper {
@@ -14,6 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
@@ -30,6 +64,42 @@
 
 .download-app__list {
   .list-style-none;
+  display: flex;
+  justify-content: space-between;
+  min-width: 204px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.download-app__link {
+  display: block;
+  width: 47px;
+  height: 56px;
+}
+
+.download-app__link--apple {
+  background-image: url("../img/apple-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.download-app__link--android {
+  background-image: url("../img/android-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.download-app__link--microsoft {
+  background-image: url("../img/microsoft-logo-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .download-app__button {
@@ -37,9 +107,30 @@
   padding: 16px 38px;
   box-shadow: inset 0 0 0 3px @white;
   border-radius: 29px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
+
+  &:hover {
+    background-color: @white;
+    color: @red;
+  }
+
+  &:active {
+    background-color: @white;
+    color: fade(@red, 30%);
+  }
 }
 
 .download-app__text {
+  margin-top: 0;
+  margin-bottom: 38px;
   color: @white;
   font-weight: 300;
   line-height: 24px;

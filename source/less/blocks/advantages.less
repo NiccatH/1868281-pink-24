@@ -4,6 +4,18 @@
 
 .advantages__header {
   background-color: @white;
+  padding-top: 46px;
+  padding-bottom: 70px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 77px;
+    padding-bottom: 72px;
+  }
 }
 
 .advantages__header-title {
@@ -11,23 +23,30 @@
   margin: 0;
 }
 
+.advantages__header-title:first-child {
+  margin-bottom: 18px;
+}
+
 .advantages__list {
   .list-style-none;
   position: relative;
-  margin: 0 auto;
+  margin: 0 6%;
+  max-width: 1200px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    margin: 0;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 11%;
-    max-width: 1200px;
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -38,14 +57,15 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin-left: auto;
     margin-right: 0;
+    padding-right: 3%;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 310px;
     grid-row: 1 / 2;
     margin: 0 auto;
+    padding-right: 0;
   }
 }
 
@@ -56,13 +76,16 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    justify-items: center;
     align-items: center;
+    padding: 54px 3% 0 3%;
+    column-gap: 72px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @grey;
     grid-column: 1 / -1;
+    text-align: left;
+    padding: 33px 0 67px 0;
   }
 }
 
@@ -75,7 +98,7 @@
 
   @media (min-width: @tablet-width) {
     width: 268px;
-    height: 547px;
+    height: 462px;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,12 +110,13 @@
 
 .advantages__iphone-image--smile {
   order: 3;
+  display: block;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     position: absolute;
     display: block;
     top: 0;
-    left: 5%;
+    left: 3%;
   }
 
   @media (min-width: @desktop-width) {
@@ -104,6 +128,12 @@
   color: @black;
   font-weight: 700;
   font-size: 18px;
+  margin: 0 0 24px 0;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
+    margin-top: 24px;
+  }
 }
 
 .advantages__title--science {
@@ -113,4 +143,20 @@
 
 .advantages__link {
   color: @red;
+
+  &:hover {
+    color: @black-lighter;
+  }
+
+  &:active {
+    color: fade(@black-lighter, 30%);
+  }
+}
+
+.advantages__text {
+  margin: 0 auto 43px auto;
+}
+
+.advantages__item--science .advantages__text {
+  margin-bottom: 24px;
 }

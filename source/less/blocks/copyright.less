@@ -1,0 +1,21 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.copyright__link {
+  &:hover .copyright__icon {
+    fill: @black-lighter;
+  }
+
+  &:active .copyright__icon {
+    fill: fade(@black-lighter, 10%);
+  }
+}
