@@ -43,23 +43,6 @@
       </div>
     </header>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
-
     <main class="page-main">
 
       <section class="download-app">
@@ -176,7 +159,7 @@
             </tr>
           </thead>
           <tbody class="price__list-body">
-            <tr class="price__row--pink">
+            <tr class="price__row price__row--pink">
               <td class="price__box price__box--mobile">Розовый фильтр</td>
               <td class="price__box">
                 <span class="price__category">Розовый фильтр</span>
@@ -188,7 +171,7 @@
                 <span class="price__category">Розовый фильтр</span>
               </td>
             </tr>
-            <tr class="price__row--smile">
+            <tr class="price__row price__row--smile">
               <td class="price__box price__box--mobile">Смайлики</td>
               <td class="price__box">
                 <span class="price__category">Смайлики</span>
@@ -200,7 +183,7 @@
                 <span class="price__category">Смайлики</span>
               </td>
             </tr>
-            <tr class="price__row--comment">
+            <tr class="price__row price__row--comment">
               <td class="price__box price__box--mobile">Комментарии</td>
               <td class="price__box">
                 <span class="price__category">Комментарии</span>
@@ -298,5 +281,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/skripts.js"></script>
   </body>
 </html>
