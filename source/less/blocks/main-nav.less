@@ -1,38 +1,21 @@
 .main-nav {
   margin: 0 auto;
-  max-width: 1200px;
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 940px;
   }
 }
 
-.main-nav__link {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 32px;
-  color: @white;
-  text-decoration: none;
-}
-
-.main-nav__list {
-  .list-style-none;
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.main-nav__logo {
+  &:hover .main-nav__logo-picture {
+    fill: @red;
   }
-}
 
-.main-nav__wrapper {
-  background-color: @black-lighter;
-
-  @media (min-width: @desktop-width) {
-    width: 620px;
-    background-color: transparent;
+  &:active .main-nav__logo-picture {
+    opacity: 30%;
   }
 }
 
@@ -42,19 +25,183 @@
   align-items: center;
   min-height: 66px;
   background-color: @black-transparrent;
+  padding: 0 6%;
 
   @media (min-width: @tablet-width) {
     min-height: 110px;
+    padding: 0 3%;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 110px;
     background-color: transparent;
+    padding: 0;
+  }
+}
+
+.main-nav--opened .main-nav__top-container {
+  @media (max-width: @desktop-width) {
+    background-color: @black-lighter;
   }
 }
 
 .main-nav__toggle {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
   @media (min-width: @desktop-width) {
     display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 50px;
+  height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: @white;
+    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+  }
+
+  &:hover::before {
+    background-color: @red;
+    box-shadow: 0 10px 0 0 @red, 0 20px 0 0 @red;
+  }
+
+  &:active::before {
+    background-color: @red;
+    box-shadow: 0 10px 0 0 @red, 0 20px 0 0 @red;
+    opacity: 30%;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 23px;
+  height: 23px;
+  padding: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    bottom: 10px;
+    width: 29px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @red;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @red;
+    opacity: 30%;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__wrapper {
+  position: relative;
+  background-color: @black-lighter;
+  z-index: 1;
+
+  @media (min-width: @desktop-width) {
+    width: 620px;
+    background-color: transparent;
+  }
+}
+
+.main-nav--closed .main-nav__wrapper {
+  @media (max-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav__list {
+  .list-style-none;
+  border-top: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: none;
+  }
+}
+
+.main-nav__item {
+  border-bottom: 1px solid @black;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    border-bottom: none;
+    box-shadow: none;
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: @white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 100%;
+
+  &:hover {
+    color: @red;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    min-width: unset;
+    text-transform: unset;
+  }
+}
+
+.main-nav__link--currant::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 32px;
+    height: 2px;
+    background-color: @white;
+    width: 100%;
   }
 }

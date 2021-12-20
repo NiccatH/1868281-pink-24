@@ -1,0 +1,31 @@
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: fade(@black-lighter, 30%);
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+
+  &:hover {
+    background-color: fade(@black-lighter, 60%);
+  }
+
+  &:active {
+    background-color: fade(@black-lighter, 10%);
+  }
+}
+
+.slider__toggle--current {
+  background-color: @white;
+  box-shadow: 0 0 0 3px @black-lighter;
+
+  &:hover,
+  &:active {
+    background-color: @white;
+  }
+}
