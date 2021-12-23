@@ -1,6 +1,36 @@
-.field,
-.field::-webkit-input-placeholder {
+.field {
+  border: 2px solid @grey-dark;
+  border-radius: 1px;
+  min-height: 59px;
   color: @black-lighter;
   font-size: 18px;
   line-height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: @black-lighter;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: @red;
+  }
+
+  &:active {
+    border-color: @red;
+  }
+
+  &::-webkit-input-placeholder {
+    color: @black-lighter;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 59px;
+  }
 }

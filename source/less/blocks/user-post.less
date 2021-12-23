@@ -3,17 +3,30 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 5%;
   height: 100%;
+  padding: 0 3% 0 3%;
 }
 
 .user-post__image {
   align-self: center;
+  margin-bottom: 25px;
+
+  & img {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .user-post__item {
-  margin: 0;
+  margin: 0 0 17px 0;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .user-post__panoram {
@@ -31,10 +44,23 @@
 }
 
 .user-post__text {
-  margin: 0;
+  margin: 14px 0 0 0;
 }
 
 .user-post__time {
   font-weight: 300;
   font-size: 12px;
+}
+
+.user-post__wrapper {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    & .rating {
+      justify-content: flex-end;
+      position: absolute;
+      top: 0;
+    }
+  }
 }
