@@ -1,20 +1,85 @@
 .achievments {
   background-color: @grey;
+  padding-top: 0;
+  padding-bottom: 44px;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     order: 4;
     background-color: @white;
+    padding-top: 49px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1 / -1;
+    padding-top: 39px;
+    padding-bottom: 57px;
+  }
+}
+
+.achievments__title {
+  position: relative;
+  top: 57px;
+  margin-bottom: 97px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding: 0 31px;
   }
 }
 
 .achievments__list {
   .list-style-none;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     text-align: left;
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    column-gap: 56px;
+    row-gap: 47px;
+  }
+}
+
+.achievments__item {
+  &:not(:last-child) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(2n) {
+      grid-row: 2 / 3;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.achievments__name {
+  padding-left: 59px;
+}
+
+.achievments__control-mark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border-radius: 1px;
+  box-shadow: 0 0 0 2px @grey-dark;
+  cursor: pointer;
+}
+
+.achievments__field[type="checkbox"]:checked + .achievments__control-mark::before {
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  content: url("../img/tick-icon.svg");
 }

@@ -1,9 +1,30 @@
 .comments {
+  padding-top: 22px;
+  padding-bottom: 52px;
+
   @media (min-width: @tablet-width) {
     order: 5;
+    padding-top: 42px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1 / -1;
+    padding-top: 39px;
+    padding-bottom: 45px;
   }
+}
+
+.comments__title {
+  @media (min-width: @tablet-width) {
+    padding: 0 38px;
+  }
+}
+
+.comments__area {
+  width: 100%;
+  min-height: 197px;
+  border: none;
+  border-radius: 1px;
+  box-shadow: 0 0 0 2px @grey-dark;
+  resize: none;
 }

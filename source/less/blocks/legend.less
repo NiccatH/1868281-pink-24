@@ -1,5 +1,10 @@
 .legend {
+  position: relative;
   color: @red;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+  }
 }

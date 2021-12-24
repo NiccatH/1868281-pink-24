@@ -1,10 +1,18 @@
 .participant-contacts {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 44px;
+
   @media (min-width: @tablet-width) {
     order: 3;
+    padding-top: 41px;
+    padding-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1 / -1;
+    padding-top: 39px;
+    padding-bottom: 23px;
   }
 }
 
@@ -13,21 +21,81 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    padding: 0 31px;
   }
 }
 
 .participant-contacts__list {
   .list-style-none;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 74px;
+  }
 }
 
 .participant-contacts__item {
   display: flex;
   flex-direction: column;
   text-align: left;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 41px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @grey-dark;
+      right: 2px;
+      top: 2px;
+      width: 57px;
+      height: 55px;
+    }
+
+    &:nth-child(1)::after {
+      background-image: url("../img/phone-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:nth-child(2)::after {
+      background-image: url("../img/mail-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .participant-contacts__contact-type {
   @media (min-width: @tablet-width) {
     order: 2;
+    margin-left: 17px;
+    margin-top: 22px;
+    margin-bottom: 0;
   }
+}
+
+.participant-contacts__field {
+  position: relative;
+}
+
+.participant-contacts__field::after {
+  content: "222";
+  position: absolute;
+  background-color: @red;
+  top: 0;
 }

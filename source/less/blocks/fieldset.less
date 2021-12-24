@@ -1,6 +1,37 @@
 .fieldset {
   border: none;
-  margin: 0;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-left: 0;
+  margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 51px;
+
+    &:first-child {
+      padding: 0 3%;
+    }
+
+    &:not(:first-child) {
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:first-child {
+      padding: 10px 0 0 0;
+    }
+
+    &:not(:first-child) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 .fieldset:not(:first-child) {

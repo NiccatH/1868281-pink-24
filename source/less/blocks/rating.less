@@ -1,9 +1,33 @@
 .rating {
   display: flex;
   margin-top: auto;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+  }
 }
 
 .rating__text {
   color: @red;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.rating__button {
+  width: 13px;
+  height: 24px;
+  background-image: url("../img/heart-icon.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-right: 0;
+    margin-left: 16px;
+  }
 }
