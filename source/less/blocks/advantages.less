@@ -34,10 +34,11 @@
   max-width: 1200px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     margin: 0;
+    padding: 54px 0 0 0;
     text-align: left;
   }
 
@@ -46,12 +47,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 940px;
     margin: 0 auto;
+    padding-top: 0;
     text-align: center;
   }
 }
 
 .advantages__item:not(:last-child) {
-  max-width: 320px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -59,6 +60,8 @@
   @media (min-width: @tablet-width) {
     margin-right: 0;
     padding-right: 3%;
+    grid-column: 2 / -1;
+    min-height: 143px;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,6 +69,7 @@
     grid-row: 1 / 2;
     margin: 0 auto;
     padding-right: 0;
+    grid-column: unset;
   }
 }
 
@@ -79,6 +83,7 @@
     align-items: center;
     padding: 54px 3% 0 3%;
     column-gap: 72px;
+    grid-column: 1 / -1;
   }
 
   @media (min-width: @desktop-width) {
@@ -90,37 +95,84 @@
 }
 
 .advantages__iphone-image {
-  background-color: @red;
+  background-color: transparent;
   width: 157px;
-  height: 320px;
+  height: 277px;
   margin: 0 auto;
   display: none;
 
   @media (min-width: @tablet-width) {
     width: 268px;
-    height: 462px;
+    height: 483px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    width: 186px;
-    height: 382px;
+    width: 308px;
+    height: 301px;
+  }
+}
+
+.advantages__iphone-image--grey {
+  background-image: url("../img/advantages-grey-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 308px 382px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantages-grey-desktop@2x.png");
+  }
+}
+
+.advantages__iphone-image--pink {
+  background-image: url("../img/advantages-pink-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 308px 382px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantages-pink-desktop@2x.png");
   }
 }
 
 .advantages__iphone-image--smile {
   order: 3;
   display: block;
+  background-image: url("../img/advantages-smile-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 157px 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantages-smile-mobile@2x.png");
+  }
+
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     position: absolute;
     display: block;
     top: 0;
     left: 3%;
+    background-image: url("../img/advantages-smile-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 268px 547px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages-smile-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     order: 0;
+    background-image: url("../img/advantages-smile-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 308px 382px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages-smile-desktop@2x.png");
+    }
   }
 }
 
@@ -128,7 +180,7 @@
   color: @black;
   font-weight: 700;
   font-size: 18px;
-  margin: 0 0 24px 0;
+  margin: 0 0 15px 0;
 
   @media (min-width: @desktop-width) {
     margin-bottom: 35px;
@@ -154,7 +206,7 @@
 }
 
 .advantages__text {
-  margin: 0 auto 43px auto;
+  margin: 0 auto 34px auto;
 }
 
 .advantages__item--science .advantages__text {
