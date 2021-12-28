@@ -25,7 +25,6 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 45px;
 
@@ -52,9 +51,43 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  padding: 8px 0 24px 0;
+  border-top: 2px solid @black-lighter;
+  border-bottom: 2px solid @black-lighter;
+  position: relative;
+
+  &--base {
+    border-left: 2px solid @black-lighter;
+  }
+
+  &--standart {
+    border-left: 2px solid @grey;
+    border-right: 2px solid @grey;
+  }
+
+  &--special::before {
+    position: absolute;
+    content: url("../img/hit-ribbon-icon.svg");
+    width: 71px;
+    height: 71px;
+    top: -2px;
+    left: 0;
+
+    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+      transform: scale(0.84) translate(-10%, -19%);
+    }
+  }
+
+  &--unlimited {
+    border-right: 2px solid @black-lighter;
+  }
 
   @media (min-width: @tablet-width) {
     width: 25%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 0 17px 0;
   }
 }
 
@@ -92,7 +125,9 @@
 
 .price__box {
   line-height: 30px;
+  box-sizing: border-box;
   border: 2px solid @grey-dark;
+  padding: 14px 0;
 
   @media (max-width: @tablet-width) {
     background-image: url("../img/yes-icon.svg");
@@ -102,11 +137,17 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding: 6px 0;
+
     &:not(:first-child) {
       background-image: url("../img/yes-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 0;
   }
 }
 

@@ -40,6 +40,27 @@
 }
 
 .photo-gallery__item:first-child {
+  position: relative;
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    background-color: @red;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    color: @white;
+    padding: 6px 19px;
+
+    @media (min-width: @tablet-width) {
+      top: 57px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
   }
