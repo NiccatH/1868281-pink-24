@@ -10,12 +10,40 @@
 }
 
 .main-nav__logo {
+  fill: @white;
+
   &:hover .main-nav__logo-picture {
     fill: @red;
   }
 
   &:active .main-nav__logo-picture {
     opacity: 30%;
+  }
+}
+
+.main-nav__logo-picture--visible-phone {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-picture--visible-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-picture--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 

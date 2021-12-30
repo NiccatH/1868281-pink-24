@@ -1,13 +1,20 @@
 .price {
-  background-color: @grey;
-  padding: 129px 0 49px 0;
+  padding-top: 127px;
+  padding-bottom: 49px;
+  background-image: url("../img/grey-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: @tablet-width) {
-    padding: 114px 0 0 0;
+    padding-top: 114px;
+    padding-bottom: 70px;
+    background-image: url("../img/grey-background.svg");
   }
 
   @media (min-width: @desktop-width) {
-    padding: 159px 0 0 0;
+    padding-top: 159px;
+    padding-bottom: 98px;
+    background-image: url("../img/grey-background-desktop.svg");
   }
 }
 
@@ -34,13 +41,12 @@
     position: static;
     transform: none;
     box-sizing: border-box;
-    margin-bottom: 70px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 940px;
     margin: 0 auto;
-    margin-bottom: 98px;
   }
 }
 
@@ -74,7 +80,10 @@
     left: 0;
 
     @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      transform: scale(0.84) translate(-10%, -19%);
+      content: url("../../img/hit-ribbon-small.svg");
+      width: 61px;
+      height: 61px;
+      top: -6px;
     }
   }
 
