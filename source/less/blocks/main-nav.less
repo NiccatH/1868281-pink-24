@@ -10,12 +10,45 @@
 }
 
 .main-nav__logo {
+  height: 40px;
+  fill: @white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 27px;
+    margin-bottom: 43px;
+  }
+
   &:hover .main-nav__logo-picture {
     fill: @red;
   }
 
   &:active .main-nav__logo-picture {
+    fill: @white;
     opacity: 30%;
+  }
+}
+
+.main-nav__logo-part-word {
+  transform: translate(-72px, -8px);
+
+  @media (min-width: @tablet-width) {
+    transform: translate(0, 0);
+  }
+}
+
+.main-nav__logo-part-glass {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav__logo-part-hollow-g-stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
