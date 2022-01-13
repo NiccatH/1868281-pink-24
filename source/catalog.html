@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
+    <link rel="manifest" href="build/favicons/site.webmanifest">
+    <link rel="mask-icon" href="build/favicons/safari-pinned-tab.svg" color="#ffc0cb">
+    <meta name="msapplication-TileColor" content="#ffc0cb">
+    <meta name="theme-color" content="#ffc0cb">
   </head>
 
   <body class="page__body">
@@ -61,8 +68,11 @@
             <li class="photo-gallery__item">
               <article class="user-post">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/panorama-gallery-desktop.jpg 1x, img/panorama-gallery-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/panorama-gallery-tablet.jpg 1x, img/panorama-gallery-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" width="1200" height="506" srcset="img/panorama-gallery-desktop.webp, img/panorama-gallery-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" width="660" height="509" srcset="img/panorama-gallery-tablet.webp, img/panorama-gallery-tablet@2x.webp 2x">
+                  <source type="image/webp" width="320" height="137" srcset="img/panorama-gallery-mobile.webp, img/panorama-gallery-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" width="1200" height="506" srcset="img/panorama-gallery-desktop.jpg, img/panorama-gallery-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" width="660" height="509" srcset="img/panorama-gallery-tablet.jpg, img/panorama-gallery-tablet@2x.jpg 2x">
                   <img class="user-post__panoram" src="img/panorama-gallery-mobile.jpg" srcset="img/panorama-gallery-mobile@2x.jpg 2x" width="320" height="137" alt="Панорамное изображение мост.">
                 </picture>
                 <div class="user-post__wrapper">
@@ -83,8 +93,11 @@
             <li class="photo-gallery__item">
               <article class="user-post">
                 <picture>
-                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/levon-photo-desktop.jpg 1x, img/levon-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/levon-photo-tablet.jpg 1x, img/levon-photo-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" width="300" height="400" srcset="img/levon-photo-desktop.webp, img/levon-photo-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" width="300" height="300" srcset="img/levon-photo-tablet.webp, img/levon-photo-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="180" srcset="img/levon-photo.webp, img/levon-photo@2x.webp 2x">
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/levon-photo-desktop.jpg, img/levon-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/levon-photo-tablet.jpg, img/levon-photo-tablet@2x.jpg 2x">
                   <img class="user-post__image" src="img/levon-photo.jpg" srcset="img/levon-photo@2x.jpg 2x" width="280" height="180" alt="Автомобиль.">
                 </picture>
                 <blockquote class="user-post__item">
@@ -103,8 +116,11 @@
             <li class="photo-gallery__item">
               <article class="user-post">
                 <picture>
-                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/anton-photo-desktop.jpg 1x, img/anton-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/anton-photo-tablet.jpg 1x, img/anton-photo-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" width="300" height="400" srcset="img/anton-photo-desktop.webp, img/anton-photo-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" width="300" height="300" srcset="img/anton-photo-tablet.webp, img/anton-photo-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="180" srcset="img/anton-photo.webp, img/anton-photo@2x.webp 2x">
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/anton-photo-desktop.jpg, img/anton-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/anton-photo-tablet.jpg, img/anton-photo-tablet@2x.jpg 2x">
                   <img class="user-post__image" src="img/anton-photo.jpg" srcset="img/anton-photo@2x.jpg 2x" width="280" height="180" alt="Барабанная установка.">
                 </picture>
                 <blockquote class="user-post__item">
@@ -123,8 +139,11 @@
             <li class="photo-gallery__item">
               <article class="user-post">
                 <picture>
-                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/boris-photo-desktop.jpg 1x, img/boris-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/boris-photo-tablet.jpg 1x, img/boris-photo-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" width="300" height="400" srcset="img/boris-photo-desktop.webp, img/boris-photo-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" width="300" height="300" srcset="img/boris-photo-tablet.webp, img/boris-photo-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="180" srcset="img/boris-photo.webp, img/boris-photo@2x.webp 2x">
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/boris-photo-desktop.jpg, img/boris-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/boris-photo-tablet.jpg, img/boris-photo-tablet@2x.jpg 2x">
                   <img class="user-post__image" src="img/boris-photo.jpg" srcset="img/boris-photo@2x.jpg 2x" width="280" height="180" alt="Вид через оконную стену.">
                 </picture>
                 <blockquote class="user-post__item">
@@ -143,8 +162,11 @@
             <li class="photo-gallery__item">
               <article class="user-post">
                 <picture>
-                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/sergey-photo-desktop.jpg 1x, img/sergey-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/sergey-photo-tablet.jpg 1x, img/sergey-photo-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" width="300" height="400" srcset="img/sergey-photo-desktop.webp, img/sergey-photo-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" width="300" height="300" srcset="img/sergey-photo-tablet.webp, img/sergey-photo-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="180" srcset="img/sergey-photo.webp, img/sergey-photo@2x.webp 2x">
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/sergey-photo-desktop.jpg, img/sergey-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/sergey-photo-tablet.jpg, img/sergey-photo-tablet@2x.jpg 2x">
                   <img class="user-post__image" src="img/sergey-photo.jpg" srcset="img/sergey-photo@2x.jpg 2x" width="280" height="180" alt="Тент Кубанская бахча.">
                 </picture>
                 <blockquote class="user-post__item">
@@ -163,8 +185,11 @@
             <li class="photo-gallery__item">
               <article class="user-post">
                 <picture>
-                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/maxim-photo-desktop.jpg 1x, img/maxim-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/maxim-photo-tablet.jpg 1x, img/maxim-photo-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" width="300" height="400" srcset="img/maxim-photo-desktop.webp, img/maxim-photo-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" width="300" height="300" srcset="img/maxim-photo-tablet.webp, img/maxim-photo-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="180" srcset="img/maxim-photo.webp, img/maxim-photo@2x.webp 2x">
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/maxim-photo-desktop.jpg, img/maxim-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/maxim-photo-tablet.jpg, img/maxim-photo-tablet@2x.jpg 2x">
                   <img class="user-post__image" src="img/maxim-photo.jpg" srcset="img/maxim-photo@2x.jpg 2x" width="280" height="180" alt="Вид с горы.">
                 </picture>
                 <blockquote class="user-post__item">
@@ -183,8 +208,11 @@
             <li class="photo-gallery__item">
               <article class="user-post">
                 <picture>
-                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/hope-photo-desktop.jpg 1x, img/hope-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/hope-photo-tablet.jpg 1x, img/hope-photo-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" width="300" height="400" srcset="img/hope-photo-desktop.webp, img/hope-photo-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" width="300" height="300" srcset="img/hope-photo-tablet.webp, img/hope-photo-tablet@2x.webp 2x">
+                  <source type="image/webp" width="280" height="180" srcset="img/hope-photo.webp, img/hope-photo@2x.webp 2x">
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="img/hope-photo-desktop.jpg, img/hope-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="img/hope-photo-tablet.jpg, img/hope-photo-tablet@2x.jpg 2x">
                   <img class="user-post__image" src="img/hope-photo.jpg" srcset="img/hope-photo@2x.jpg 2x" width="280" height="180" alt="Вид из окна самолета .">
                 </picture>
                 <blockquote class="user-post__item">
@@ -207,9 +235,12 @@
         <h2 class="upload-photo__title title-normal">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
         <form class="upload-photo__form photo-form" action="https://echo.htmlacademy.ru/" method="post">
           <picture>
-            <source media="(min-width: 1200px)" width="300" height="400" srcset="img/upload-ur-photo-desktop.jpg 1x, img/upload-ur-photo-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" width="300" height="400" srcset="img/upload-ur-photo-tablet.jpg 1x, img/upload-ur-photo-tablet@2x.jpg 2x">
-            <img class="photo-form__image" src="img/upload-ur-photo.jpg" srcset="img/upload-ur-photo@2x.jpg 2x"  width="280" height="374" alt="Зимний лес.">
+            <source type="image/webp" media="(min-width: 1200px)" width="300" height="400" srcset="img/upload-ur-photo-desktop.webp, img/upload-ur-photo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" width="300" height="400" srcset="img/upload-ur-photo-tablet.webp, img/upload-ur-photo-tablet@2x.webp 2x">
+            <source type="image/webp" width="280" height="374" srcset="img/upload-ur-photo.webp, img/upload-ur-photo@2x.webp 2x">
+            <source media="(min-width: 1200px)" width="300" height="400" srcset="img/upload-ur-photo-desktop.jpg, img/upload-ur-photo-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" width="300" height="400" srcset="img/upload-ur-photo-tablet.jpg, img/upload-ur-photo-tablet@2x.jpg 2x">
+            <img class="photo-form__image" src="img/upload-ur-photo.jpg" srcset="img/upload-ur-photo@2x.jpg 2x" width="280" height="374" alt="Зимний лес.">
           </picture>
           <div class="photo-form__tools-container">
             <div class="photo-form__range-slider-container">
@@ -252,7 +283,7 @@
               <span class="visually-hidden">Сброс фильтров</span>
             </button>
           </div>
-        </form>
+        </div></form>
       </section>
     </main>
 
@@ -303,6 +334,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/skripts.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
