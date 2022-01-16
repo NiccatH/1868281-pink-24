@@ -1,8 +1,9 @@
 .download-app {
+  background-color: @black-light;
   background-image: url("../img/iphone-hand-mobile.png"), url("../img/background-nav-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 320px 286px, 100% 466px;
-  background-position: center bottom 280px, 0 0;
+  background-size: 320px 286px, 100%;
+  background-position: center bottom 279px, 0 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/background-nav-mobile@2x.jpg");
@@ -54,17 +55,22 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  margin-top: 83px;
-  margin-bottom: 298px;
+  margin-top: 81px;
+  margin-bottom: 302px;
 
   @media (min-width: @tablet-width) {
     margin-top: 212px;
     margin-bottom: 11px;
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 300px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 23px;
     width: 300px;
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
@@ -135,8 +141,9 @@
 
 .download-app__button {
   box-sizing: border-box;
+  font-size: 18px;
   color: @white;
-  padding: 16px 38px;
+  padding: 18px 38px;
   box-shadow: inset 0 0 0 3px @white;
   border-radius: 29px;
   margin-bottom: 32px;
@@ -148,6 +155,8 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 67px;
+    font-size: 21px;
+    padding: 19px 0;
   }
 
   &:hover {
@@ -167,4 +176,8 @@
   color: @white;
   font-weight: 300;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }

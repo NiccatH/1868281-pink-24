@@ -14,8 +14,17 @@
 }
 
 .advantages__header-title {
-  line-height: 29px;
   margin: 0;
+  line-height: 29px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 54px;
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 68px;
+  }
 }
 
 .advantages__header-title:first-child {
@@ -206,15 +215,44 @@
   font-size: 18px;
   margin: 0 0 13px 0;
 
+  @media (max-width: @desktop-width) {
+    br {
+      content: " ";
+    }
+
+    br::after {
+      content: " ";
+    }
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 35px;
-    margin-top: 24px;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 24px 33px 35px 33px;
   }
 }
 
 .advantages__title--science {
   font-size: 30px;
   line-height: 36px;
+
+  @media (max-width: @desktop-width) {
+    br {
+      content: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+
+    br {
+      content: "  ";
+    }
+
+    br::after {
+      content: " ";
+    }
+  }
 }
 
 .advantages__link {
@@ -227,10 +265,26 @@
   &:active {
     color: fade(@black-lighter, 30%);
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 33px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .advantages__text {
   margin: 0 auto 36px auto;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 33px;
+  }
+}
+
+.advantages__science-wrapper .advantages__text {
+  padding-right: 0;
 }
 
 .advantages__item--science .advantages__text {

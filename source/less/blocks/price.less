@@ -66,6 +66,10 @@
     padding: 8px 0 5px 0;
   }
 
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+
   &--base {
     border-left: 2px solid @black-lighter;
   }
@@ -102,6 +106,10 @@
 .price__tariff-value {
   font-weight: 300;
   font-size: 18px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price__tariff--hollow {
@@ -135,7 +143,8 @@
   line-height: 30px;
   box-sizing: border-box;
   border: 2px solid @grey-dark;
-  padding: 14px 0;
+  padding: 14px 20px;
+  text-align: left;
 
   @media (max-width: @tablet-width) {
     background-image: url("../img/yes-icon.svg");
@@ -145,7 +154,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 6px 0;
+    padding: 6px 15px;
 
     &:not(:first-child) {
       background-image: url("../img/yes-icon.svg");
@@ -155,13 +164,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 13px 0;
+    padding: 13px 20px;
+    font-size: 18px;
   }
 }
 
 .price__category {
-  margin-left: 20px;
-
   @media (min-width: @tablet-width) {
     display: none;
   }

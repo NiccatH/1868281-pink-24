@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
     <link rel="manifest" href="build/favicons/site.webmanifest">
     <link rel="mask-icon" href="build/favicons/safari-pinned-tab.svg" color="#ffc0cb">
+    <link rel="preload" href="build/img/background-nav-mobile@2x.jpg" as="image" crossorigin="anonymous">
     <meta name="msapplication-TileColor" content="#ffc0cb">
     <meta name="theme-color" content="#ffc0cb">
   </head>
@@ -60,8 +61,9 @@
     </header>
 
     <main class="page-catalog">
-      <h1 class="page-catalog__title title-light">Фотографии <br> пользователей</h1>
-
+      <div class="page-catalog__title-wrapper upper-wrapper">
+        <h1 class="title-with-back title-light">Фотографии <br> пользователей</h1>
+      </div>
       <section class="photo-gallery">
         <h2 class="photo-gallery__title title-normal">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</h2>
           <ul class="photo-gallery__list">
@@ -327,7 +329,7 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт ШТМЛ Академи.">
             <span class="visually-hidden">ШТМЛ Академи</span>
-            <svg class="copyright__icon" width="27" height="34">
+            <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34">
               <use href="img/sprite.svg#html-academy-logo"></use>
             </svg>
           </a>
