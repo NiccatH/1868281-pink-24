@@ -1,3 +1,13 @@
+.contacts {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: -9px;
+  }
+}
+
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
@@ -15,19 +25,21 @@
 }
 
 .contacts__title {
-  margin-top: 47px;
-  margin-bottom: 45px;
+  margin-top: 60px;
+  margin-bottom: 34px;
   line-height: 29px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 55px;
-    margin-bottom: 51px;
+    margin-top: 44px;
+    margin-bottom: 33px;
     line-height: 54px;
     font-size: 40px;
   }
 
   @media (min-width: @desktop-width) {
     line-height: 68px;
+    margin-top: 9px;
+    margin-bottom: 40px;
   }
 }
 
@@ -35,7 +47,15 @@
   font-size: 18px;
   line-height: 25px;
   margin-top: 0;
-  margin-bottom: 13px;
+  margin-bottom: -1px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__list {
@@ -45,7 +65,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 97px;
+    column-gap: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -71,10 +91,10 @@
 }
 
 .contacts__item--phone {
-  margin-bottom: 31px;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -84,10 +104,10 @@
 }
 
 .contacts__item--email {
-  margin-bottom: 35px;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -97,10 +117,10 @@
 }
 
 .contacts__item--adress {
-  margin-bottom: 41px;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {

@@ -1,14 +1,29 @@
 .field {
   font-family: inherit;
   border: 2px solid @grey-dark;
-  border-radius: 1px;
-  min-height: 59px;
+  border-radius: 4px;
+  min-height: 62px;
   color: @black-lighter;
   font-size: 18px;
   line-height: 30px;
-  padding: 0 6%;
+  padding: 0 7.5%;
   margin: 0;
   box-sizing: border-box;
+
+  &::placeholder {
+    color: @black-lighter;
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    color: @black-lighter;
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
+    color: @black-lighter;
+    opacity: 1;
+  }
 
   &:hover {
     border-color: @black-lighter;
@@ -23,11 +38,11 @@
     border-color: @red;
   }
 
-  &::-webkit-input-placeholder {
-    color: @black-lighter;
-  }
-
   @media (min-width: @tablet-width) {
     padding: 0 59px 0 3%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 59px 0 4%;
   }
 }

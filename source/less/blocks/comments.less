@@ -1,22 +1,27 @@
 .comments {
   padding-top: 22px;
-  padding-bottom: 52px;
+  padding-bottom: 43px;
 
   @media (min-width: @tablet-width) {
     order: 5;
-    padding-top: 42px;
+    padding-top: 47px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1 / -1;
-    padding-top: 39px;
-    padding-bottom: 45px;
+    padding-top: 43px;
+    padding-bottom: 39px;
   }
 }
 
 .comments__title {
+  top: -14px;
+  width: 70%;
+
   @media (min-width: @tablet-width) {
     padding: 0 38px;
+    width: auto;
   }
 }
 
@@ -27,4 +32,14 @@
   border-radius: 1px;
   box-shadow: 0 0 0 2px @grey-dark;
   resize: none;
+  padding-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 190px;
+    padding: 14px 10px 5px 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 123px;
+  }
 }
