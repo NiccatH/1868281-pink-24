@@ -2,17 +2,17 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="msapplication-TileColor" content="#ffc0cb">
     <meta name="theme-color" content="#ffc0cb">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="apple-touch-icon" sizes="152x152" href="build/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="build/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
-    <link rel="manifest" href="build/favicons/site.webmanifest">
-    <link rel="mask-icon" href="build/favicons/safari-pinned-tab.svg" color="#ffc0cb">
-    <link rel="preload" href="build/img/background-nav-mobile@2x.jpg" as="image" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffc0cb">
+    <link rel="preload" href="img/background-nav-mobile@2x.jpg" as="image" crossorigin="anonymous">
   </head>
 
   <body class="page__body">
@@ -20,7 +20,7 @@
       <div class="page-header__top-container">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__top-container">
-          <a class="main-nav__logo" href="#" aria-label="Сайт приложения Пинк.">
+          <a class="main-nav__logo" href="index.html" aria-label="Сайт приложения Пинк.">
             <span class="visually-hidden">Приложение Пинк</span>
             <svg class="main-nav__logo-picture" viewBox="0 0 147 40">
               <g class="main-nav__logo-part-word">
@@ -53,7 +53,7 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -70,14 +70,16 @@
           <ul class="photo-gallery__list">
             <li class="photo-gallery__item">
               <article class="photo-gallery__post user-post">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-gallery-desktop.webp, img/panorama-gallery-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-gallery-tablet.webp, img/panorama-gallery-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/panorama-gallery-mobile.webp, img/panorama-gallery-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/panorama-gallery-desktop.jpg, img/panorama-gallery-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/panorama-gallery-tablet.jpg, img/panorama-gallery-tablet@2x.jpg 2x">
-                  <img class="user-post__panoram" src="img/panorama-gallery-mobile.jpg" srcset="img/panorama-gallery-mobile@2x.jpg 2x" width="320" height="137" alt="Панорамное изображение мост.">
-                </picture>
+                <a class="user-post__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-gallery-desktop.webp, img/panorama-gallery-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-gallery-tablet.webp, img/panorama-gallery-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/panorama-gallery-mobile.webp, img/panorama-gallery-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/panorama-gallery-desktop.jpg, img/panorama-gallery-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/panorama-gallery-tablet.jpg, img/panorama-gallery-tablet@2x.jpg 2x">
+                    <img class="user-post__panoram" src="img/panorama-gallery-mobile.jpg" srcset="img/panorama-gallery-mobile@2x.jpg 2x" width="320" height="137" alt="Панорамное изображение мост.">
+                  </picture>
+                </a>
                 <div class="user-post__wrapper">
                 <blockquote class="user-post__item user-post__item--panoram">
                   <cite class="user-post__author-name">Анна</cite>
@@ -95,14 +97,16 @@
             </li>
             <li class="photo-gallery__item">
               <article class="photo-gallery__post user-post">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/levon-photo-desktop.webp, img/levon-photo-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/levon-photo-tablet.webp, img/levon-photo-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/levon-photo.webp, img/levon-photo@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/levon-photo-desktop.jpg, img/levon-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/levon-photo-tablet.jpg, img/levon-photo-tablet@2x.jpg 2x">
-                  <img class="user-post__image" src="img/levon-photo.jpg" srcset="img/levon-photo@2x.jpg 2x" width="280" height="180" alt="Автомобиль.">
-                </picture>
+                <a class="user-post__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/levon-photo-desktop.webp, img/levon-photo-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/levon-photo-tablet.webp, img/levon-photo-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/levon-photo.webp, img/levon-photo@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/levon-photo-desktop.jpg, img/levon-photo-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/levon-photo-tablet.jpg, img/levon-photo-tablet@2x.jpg 2x">
+                    <img class="user-post__image" src="img/levon-photo.jpg" srcset="img/levon-photo@2x.jpg 2x" width="280" height="180" alt="Автомобиль.">
+                  </picture>
+                </a>
                 <blockquote class="user-post__item">
                   <cite class="user-post__author-name">Левон</cite>
                   <span class="user-post__time">(5 часов назад)</span>
@@ -118,14 +122,16 @@
             </li>
             <li class="photo-gallery__item">
               <article class="photo-gallery__post user-post">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/anton-photo-desktop.webp, img/anton-photo-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/anton-photo-tablet.webp, img/anton-photo-tablet@2x.webp 2x">
-                  <source type="image/webp"  srcset="img/anton-photo.webp, img/anton-photo@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/anton-photo-desktop.jpg, img/anton-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/anton-photo-tablet.jpg, img/anton-photo-tablet@2x.jpg 2x">
-                  <img class="user-post__image" src="img/anton-photo.jpg" srcset="img/anton-photo@2x.jpg 2x" width="280" height="180" alt="Барабанная установка.">
-                </picture>
+                <a class="user-post__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/anton-photo-desktop.webp, img/anton-photo-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/anton-photo-tablet.webp, img/anton-photo-tablet@2x.webp 2x">
+                    <source type="image/webp"  srcset="img/anton-photo.webp, img/anton-photo@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/anton-photo-desktop.jpg, img/anton-photo-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/anton-photo-tablet.jpg, img/anton-photo-tablet@2x.jpg 2x">
+                    <img class="user-post__image" src="img/anton-photo.jpg" srcset="img/anton-photo@2x.jpg 2x" width="280" height="180" alt="Барабанная установка.">
+                  </picture>
+                </a>
                 <blockquote class="user-post__item">
                   <cite class="user-post__author-name">Антон</cite>
                   <span class="user-post__time">(12 часов назад)</span>
@@ -141,14 +147,16 @@
             </li>
             <li class="photo-gallery__item">
               <article class="photo-gallery__post user-post">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/boris-photo-desktop.webp, img/boris-photo-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/boris-photo-tablet.webp, img/boris-photo-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/boris-photo.webp, img/boris-photo@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/boris-photo-desktop.jpg, img/boris-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/boris-photo-tablet.jpg, img/boris-photo-tablet@2x.jpg 2x">
-                  <img class="user-post__image" src="img/boris-photo.jpg" srcset="img/boris-photo@2x.jpg 2x" width="280" height="180" alt="Вид через оконную стену.">
-                </picture>
+                <a class="user-post__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/boris-photo-desktop.webp, img/boris-photo-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/boris-photo-tablet.webp, img/boris-photo-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/boris-photo.webp, img/boris-photo@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/boris-photo-desktop.jpg, img/boris-photo-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/boris-photo-tablet.jpg, img/boris-photo-tablet@2x.jpg 2x">
+                    <img class="user-post__image" src="img/boris-photo.jpg" srcset="img/boris-photo@2x.jpg 2x" width="280" height="180" alt="Вид через оконную стену.">
+                  </picture>
+                </a>
                 <blockquote class="user-post__item">
                   <cite class="user-post__author-name">Борис</cite>
                   <span class="user-post__time">(20 часов назад)</span>
@@ -164,14 +172,16 @@
             </li>
             <li class="photo-gallery__item">
               <article class="photo-gallery__post user-post">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/sergey-photo-desktop.webp, img/sergey-photo-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/sergey-photo-tablet.webp, img/sergey-photo-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/sergey-photo.webp, img/sergey-photo@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/sergey-photo-desktop.jpg, img/sergey-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/sergey-photo-tablet.jpg, img/sergey-photo-tablet@2x.jpg 2x">
-                  <img class="user-post__image" src="img/sergey-photo.jpg" srcset="img/sergey-photo@2x.jpg 2x" width="280" height="180" alt="Тент Кубанская бахча.">
-                </picture>
+                <a class="user-post__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/sergey-photo-desktop.webp, img/sergey-photo-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/sergey-photo-tablet.webp, img/sergey-photo-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/sergey-photo.webp, img/sergey-photo@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/sergey-photo-desktop.jpg, img/sergey-photo-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/sergey-photo-tablet.jpg, img/sergey-photo-tablet@2x.jpg 2x">
+                    <img class="user-post__image" src="img/sergey-photo.jpg" srcset="img/sergey-photo@2x.jpg 2x" width="280" height="180" alt="Тент Кубанская бахча.">
+                  </picture>
+                </a>
                 <blockquote class="user-post__item">
                   <cite class="user-post__author-name">Сергей</cite>
                   <span class="user-post__time">(25 часов назад)</span>
@@ -187,14 +197,16 @@
             </li>
             <li class="photo-gallery__item">
               <article class="photo-gallery__post user-post">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/maxim-photo-desktop.webp, img/maxim-photo-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/maxim-photo-tablet.webp, img/maxim-photo-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/maxim-photo.webp, img/maxim-photo@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/maxim-photo-desktop.jpg, img/maxim-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/maxim-photo-tablet.jpg, img/maxim-photo-tablet@2x.jpg 2x">
-                  <img class="user-post__image" src="img/maxim-photo.jpg" srcset="img/maxim-photo@2x.jpg 2x" width="280" height="180" alt="Вид с горы.">
-                </picture>
+                <a class="user-post__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/maxim-photo-desktop.webp, img/maxim-photo-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/maxim-photo-tablet.webp, img/maxim-photo-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/maxim-photo.webp, img/maxim-photo@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/maxim-photo-desktop.jpg, img/maxim-photo-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/maxim-photo-tablet.jpg, img/maxim-photo-tablet@2x.jpg 2x">
+                    <img class="user-post__image" src="img/maxim-photo.jpg" srcset="img/maxim-photo@2x.jpg 2x" width="280" height="180" alt="Вид с горы.">
+                  </picture>
+                </a>
                 <blockquote class="user-post__item">
                   <cite class="user-post__author-name">Максим</cite>
                   <span class="user-post__time">(40 часов назад)</span>
@@ -210,14 +222,16 @@
             </li>
             <li class="photo-gallery__item">
               <article class="photo-gallery__post user-post">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/hope-photo-desktop.webp, img/hope-photo-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/hope-photo-tablet.webp, img/hope-photo-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/hope-photo.webp, img/hope-photo@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/hope-photo-desktop.jpg, img/hope-photo-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/hope-photo-tablet.jpg, img/hope-photo-tablet@2x.jpg 2x">
-                  <img class="user-post__image" src="img/hope-photo.jpg" srcset="img/hope-photo@2x.jpg 2x" width="280" height="180" alt="Вид из окна самолета .">
-                </picture>
+                <a class="user-post__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/hope-photo-desktop.webp, img/hope-photo-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/hope-photo-tablet.webp, img/hope-photo-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/hope-photo.webp, img/hope-photo@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/hope-photo-desktop.jpg, img/hope-photo-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/hope-photo-tablet.jpg, img/hope-photo-tablet@2x.jpg 2x">
+                    <img class="user-post__image" src="img/hope-photo.jpg" srcset="img/hope-photo@2x.jpg 2x" width="280" height="180" alt="Вид из окна самолета .">
+                  </picture>
+                </a>
                 <blockquote class="user-post__item">
                   <cite class="user-post__author-name">Надежда</cite>
                   <span class="user-post__time">(45 часов назад)</span>
@@ -292,7 +306,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__icon page-footer__icon--mobile" viewBox="0 0 145 40">
             <use href="img/sprite.svg#footer-logo"></use>
           </svg>

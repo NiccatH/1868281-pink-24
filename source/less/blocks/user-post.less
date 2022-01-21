@@ -9,6 +9,13 @@
   }
 }
 
+.user-post__link {
+  @media (min-width: @tablet-width) {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
 .user-post__image {
   display: block;
   height: 100%;
@@ -45,6 +52,13 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @-moz-document url-prefix("") {
+    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+      width: 106.4%;
+      left: ~ "calc(-53.2% + 50%)";
+    }
   }
 }
 
