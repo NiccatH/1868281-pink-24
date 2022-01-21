@@ -1,0 +1,33 @@
+.upper-wrapper {
+  color: @white;
+  line-height: 33px;
+  background-image: url("../img/background-nav-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 237px;
+  margin: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-nav-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 440px;
+    background-image: url("../img/background-nav-tablet.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-nav-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 394px;
+    background-image: url("../img/background-nav-desktop.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-nav-desktop@2x.jpg");
+    }
+  }
+}

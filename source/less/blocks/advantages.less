@@ -1,41 +1,80 @@
+.advantages {
+  overflow: hidden;
+}
+
 .advantages__header {
   background-color: @white;
-  padding-top: 46px;
+  padding-top: 40px;
+  padding-bottom: 112px;
+  margin: 0 6%;
 
   @media (min-width: @tablet-width) {
-    padding-top: 58px;
+    padding-top: 47px;
     padding-bottom: 47px;
+    margin: 0 3%;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 77px;
-    padding-bottom: 72px;
+    padding-top: 62px;
+    padding-bottom: 0;
   }
 }
 
 .advantages__header-title {
-  line-height: 29px;
   margin: 0;
-}
-
-.advantages__header-title:first-child {
-  margin-bottom: 18px;
-}
-
-.advantages__list-wrapper {
-  padding-top: 123px;
-  background-image: url("../img/grey-background-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  line-height: 29px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 103px;
-    background-image: url("../img/grey-background.svg");
+    line-height: 54px;
+    font-size: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 6px;
-    background-image: url("../img/grey-background-desktop.svg");
+    line-height: 68px;
+  }
+}
+
+.advantages__header-title:first-child {
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.advantages__list-wrapper {
+  background-color: @grey;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+    background-color: transparent;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 57px;
+  }
+}
+
+.advantages__list-wrapper::before {
+  height: 50%;
+  background-color: @grey;
+  transform: rotate(-6deg);
+  top: -65px;
+  content: " ";
+  display: block;
+  width: 200vw;
+  position: absolute;
+  left: calc(-100vw + 50%);
+
+  @media (min-width: @tablet-width) {
+    top: 8px;
+    transform: rotate(-4deg);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 102px;
+    transform: rotate(-5deg);
   }
 }
 
@@ -51,6 +90,7 @@
     flex-wrap: wrap;
     margin: 0;
     text-align: left;
+    background-color: @grey;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,6 +100,19 @@
     margin: 0 auto;
     padding-top: 0;
     text-align: center;
+    background-color: transparent;
+    column-gap: 10px;
+
+    &::before {
+      content: "2222 ";
+      position: absolute;
+      top: 170px;
+      height: 100%;
+      background-color: @grey;
+      width: 200vw;
+      left: calc(-100vw + 50%);
+      z-index: -1;
+    }
   }
 }
 
@@ -69,8 +122,8 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    min-height: 145px;
-    margin-right: 0;
+    min-height: 142px;
+    margin-left: 0;
     padding-right: 3%;
     grid-column: 2 / -1;
   }
@@ -85,8 +138,12 @@
 }
 
 .advantages__item:nth-child(3) {
+  & .advantages__text {
+    margin-bottom: 40px;
+  }
+
   @media (min-width: @tablet-width) {
-    min-height: 121px;
+    min-height: 126px;
   }
 }
 
@@ -107,11 +164,15 @@
     background-color: @grey;
     grid-column: 1 / -1;
     text-align: left;
-    padding: 33px 0 67px 0;
+    padding: 29px 0 67px 0;
+    column-gap: 71px;
   }
 }
 
 .advantages__icon-timer {
+  width: 238px;
+  height: 276px;
+
   @media (min-width: @desktop-width) {
     width: 298px;
     height: 345px;
@@ -172,10 +233,10 @@
   }
 
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     position: absolute;
     display: block;
-    top: -74px;
+    top: -72px;
     left: 3%;
     background-image: url("../img/advantages-smile-tablet.png");
     background-repeat: no-repeat;
@@ -206,19 +267,36 @@
   font-size: 18px;
   margin: 0 0 13px 0;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 12px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 35px;
-    margin-top: 24px;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 56px 36px 22px 33px;
   }
 }
 
 .advantages__title--science {
+  margin-top: 44px;
   font-size: 30px;
   line-height: 36px;
+  margin-bottom: 10px;
+
+  @media (max-width: @tablet-width-only) {
+    max-width: 175px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+    margin: 74px 0 25px 0;
+  }
 }
 
 .advantages__link {
   color: @red;
+  margin-top: 10px;
 
   &:hover {
     color: @black-lighter;
@@ -227,12 +305,46 @@
   &:active {
     color: fade(@black-lighter, 30%);
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: -40px;
+    display: block;
+  }
 }
 
 .advantages__text {
-  margin: 0 auto 36px auto;
+  margin: 0 auto 30px 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 33px 0 36px;
+  }
 }
 
-.advantages__item--science .advantages__text {
-  margin-bottom: 24px;
+.advantages__science-wrapper {
+  display: block;
+  align-self: stretch;
+  margin-bottom: 21px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+  }
+}
+
+.advantages__science-wrapper .advantages__text {
+  padding-right: 0;
+  margin: 0 0 10px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 525px;
+    padding-left: 0;
+    margin: 0 0 30px 0;
+  }
 }

@@ -1,6 +1,6 @@
 .initials {
   text-align: left;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
   padding-top: 0;
   padding-bottom: 0;
 
@@ -33,7 +33,11 @@
   flex-direction: column;
 
   &:not(:last-child) {
-    margin-bottom: 29px;
+    margin-bottom: 17px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 53px;
+    }
   }
 
   @media (min-width: @tablet-width) {

@@ -6,7 +6,19 @@
   margin-bottom: 41px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 5px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 153px;
+  }
+}
+
+.copyright__text {
+  font-weight: 400;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -15,6 +27,8 @@
 
   & .copyright__icon {
     fill: @red;
+    width: 27px;
+    height: 34px;
   }
 
   &:hover .copyright__icon {

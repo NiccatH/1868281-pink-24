@@ -1,16 +1,13 @@
 .photo-gallery__title {
-  padding: 54px 6% 60px 6%;
+  padding: 44px 12% 50px 12%;
+  margin: 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    padding: 100px 19% 85px 19%;
-
-    br {
-      display: none;
-    }
+    padding: 91px 9% 77px 9%;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 100px 0 97px 0;
+    padding: 91px 26% 89px 26%;
     max-width: 940px;
     margin: 0 auto;
   }
@@ -31,7 +28,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     column-gap: 20px;
-    row-gap: 40px;
+    row-gap: 54px;
     grid-template-columns: repeat(3, 300px);
     max-width: 940px;
     margin: 0 auto;
@@ -39,15 +36,53 @@
   }
 }
 
+.photo-gallery__item:not(:first-child) {
+  min-height: 303px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 455px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 555px;
+  }
+}
+
+.photo-gallery__item:not(:last-child) {
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .photo-gallery__item:first-child {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 1px;
+  }
+
+  & .photo-gallery__post {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 9px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 5px;
+    }
+  }
 
   &::before {
     content: "ПАНОРАМА ДНЯ";
     position: absolute;
     background-color: @red;
     top: 0;
-    right: 0;
+    right: 2px;
     z-index: 1;
     font-family: inherit;
     font-weight: 700;
@@ -59,17 +94,13 @@
     @media (min-width: @tablet-width) {
       top: 57px;
     }
+
+    @media (min-width: @desktop-width) {
+      top: 54px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
-  }
-}
-
-.photo-gallery__item:not(:last-child) {
-  margin-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
   }
 }

@@ -1,10 +1,16 @@
 .legend {
-  position: relative;
+  position: absolute;
   color: @red;
   line-height: 18px;
   text-transform: uppercase;
+  left: 50%;
+  top: 39px;
+  background: transparent;
+  transform: translate(-50%, 0);
 
   @media (min-width: @tablet-width) {
-    position: static;
+    line-height: 30px;
+    top: -15px;
+    background: @white;
   }
 }

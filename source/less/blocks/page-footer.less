@@ -14,14 +14,15 @@
   @media (min-width: @desktop-width) {
     max-width: 940px;
     margin: 0 auto;
-    padding: 70px 0 75px 0;
+    padding: 65px 0 75px 0;
   }
 }
 
 .page-footer__logo {
   display: block;
   cursor: pointer;
-  margin: 40px 0 41px 0;
+  margin: 40px 0 34px 0;
+  fill: @black-lighter;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -37,7 +38,27 @@
   }
 }
 
+.page-footer__icon {
+  &--twitter {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--facebook {
+    width: 9px;
+    height: 18px;
+  }
+
+  &--youtube {
+    width: 15px;
+    height: 13px;
+  }
+}
+
 .page-footer__icon--mobile {
+  width: 145px;
+  height: 40px;
+
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -45,6 +66,9 @@
 
 .page-footer__icon--desktop {
   display: none;
+  width: 147px;
+  height: 40px;
+
 
   @media (min-width: @desktop-width) {
     display: block;
@@ -58,13 +82,21 @@
   width: 172px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 5px 0 0 -14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 11px 10px 0 13px;
   }
 }
 
 .page-footer__item {
   &:not(:last-child) {
     margin-right: 14px;
+
+    @media (min-width: @desktop-width) {
+      margin-right: 13px;
+    }
   }
 }
 
